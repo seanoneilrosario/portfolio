@@ -33,17 +33,17 @@ body {
 
 @font-face {
   font-family: 'Amita-Regular';
-  src: url(./Amita-Regular.eot);
-  src: url(./Amita-Regular.eot?#iefix) format('embedded-opentype'),
-       url(./Amita-Regular.otf) format('otf'),
-       url(./Amita-Regular.ttf) format('truetype'),
-       url(./Amita-Regular.woff) format('woff'),
-       url(./Amita-Regular.woff2) format('woff2');
+  src: url(../../public/fonts/Amita-Regular.eot);
+  src: url(../../public/fonts/Amita-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../../public/fonts/Amita-Regular.otf) format('otf'),
+       url(../../public/fonts/Amita-Regular.ttf) format('truetype'),
+       url(../../public/fonts/Amita-Regular.woff) format('woff'),
+       url(../../public/fonts/Amita-Regular.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Nunito-VariableFont_wght';
-  src: url(./Nunito-VariableFont_wght.ttf) format('truetype');
+  src: url(../../public/fonts//Nunito-VariableFont_wght.ttf) format('truetype');
 }
 
 .container {
