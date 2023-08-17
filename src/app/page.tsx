@@ -72,13 +72,13 @@ export default function Home() {
           <img className='h-[100%] w-[100%] object-cover' src={programming.src}></img>
         </div>
         <div className='px-[20px]'>
-          <h1 className='font-[Amita-Regular] text-[50px] text-[#F1F0E8]'>Hi, It's Sean</h1>
-          <h1 className='font-[Amita-Regular] text-[50px] text-[#F1F0E8]'>I'm a Professional Web Developer</h1>
+          <h1 className='leading-tight font-[Amita-Regular] text-[35px] md:text-[50px] text-[#F1F0E8]'>Hi, It's Sean</h1>
+          <h1 className='leading-tight font-[Amita-Regular] text-[35px] md:text-[50px] text-[#F1F0E8]'>I'm a Professional Web Developer</h1>
         </div>
       </div>
       <div id="about-me" className='bg-[#DAFFFB] py-[60px] border-[#071952] border-b-[1px]'>
         <div className='text-center container'>
-          <h2 className='font-[Amita-Regular] text-[40px] text-[#071952]'>About Me</h2>
+          <h2 className='font-[Amita-Regular] text-[25px] md:text-[40px] text-[#071952]'>About Me</h2>
           <div className='md:flex items-center md:pt-[60px] pt-[30px]'>
             <div className='md:mx-[20px] md:w-[50%] h-[100%] w-[100%] relative video_present'>
               <img className='h-[100%] max-h-[600px] w-[100%] object-cover profile_image' src={profile.src}></img>
@@ -105,10 +105,10 @@ export default function Home() {
       </div>
       <div id="services" className='bg-[#DAFFFB] py-[60px] border-[#071952] border-b-[1px]'>
         <div className='text-center container'>
-          <h2 className='font-[Amita-Regular] text-[40px] text-[#071952]'>Services</h2>
+          <h2 className='font-[Amita-Regular] text-[25px] md:text-[40px] text-[#071952]'>Services</h2>
           <div className='pt-[20px] flex flex-wrap justify-center items-start'>
             <div className='w-[100%] md:w-[33.33%] p-[20px]'>
-              <h3 className='text-[#071952] text-[20px] pb-[20px]'>1. Web Development</h3>
+              <h3 className='text-[#071952] text-[16px] md:text-[20px] pb-[20px]'>1. Web Development</h3>
               <div className='group-item text-left relative'>
                 <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={webdev.src}></img>
                 <div className='text-[#071952] z-[1] rounded-[10px] md:text-[#F1F0E8] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] md:bg-[#061d3a] w-[100%] h-[fit-content]'>
@@ -122,7 +122,7 @@ export default function Home() {
               </div>
             </div>
             <div className='w-[100%] md:w-[33.33%] p-[20px]'>
-              <h3 className='text-[#071952] text-[20px] pb-[20px]'>2. E-commerce Development</h3>
+              <h3 className='text-[#071952] text-[16px] md:text-[20px] pb-[20px]'>2. E-commerce Development</h3>
               <div className='group-item text-left relative'>
                 <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={ecom.src}></img>
                 <div className='text-[#071952] z-[1] rounded-[10px] md:text-[#F1F0E8] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] md:bg-[#061d3a] w-[100%] h-[fit-content]'>
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
             </div>
             <div className='w-[100%] md:w-[33.33%] p-[20px]'>
-              <h3 className='text-[#071952] text-[20px] pb-[20px]'>3. UI/UX Design</h3>
+              <h3 className='text-[#071952] text-[16px] md:text-[20px] pb-[20px]'>3. UI/UX Design</h3>
               <div className='group-item text-left relative'>
                 <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={design.src}></img>
                 <div className='text-[#071952] z-[1] rounded-[10px] md:text-[#F1F0E8] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] md:bg-[#061d3a] w-[100%] h-[fit-content]'>
@@ -144,7 +144,7 @@ export default function Home() {
               </div>
             </div>
             <div className='w-[100%] md:w-[33.33%] p-[20px]'>
-              <h3 className='text-[#071952] text-[20px] pb-[20px]'>4. QA and Testing</h3>
+              <h3 className='text-[#071952] text-[16px] md:text-[20px] pb-[20px]'>4. QA and Testing</h3>
               <div className='group-item text-left relative'>
                 <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={testing.src}></img>
                 <div className='text-[#071952] z-[1] rounded-[10px] md:text-[#F1F0E8] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] md:bg-[#061d3a] w-[100%] h-[fit-content]'>
@@ -155,7 +155,7 @@ export default function Home() {
               </div>
             </div>
             <div className='w-[100%] md:w-[33.33%] p-[20px]'>
-              <h3 className='text-[#071952] text-[20px] pb-[20px]'>5. Maintenance and Support</h3>
+              <h3 className='text-[#071952] text-[16px] md:text-[20px] pb-[20px]'>5. Maintenance and Support</h3>
               <div className='group-item text-left relative'>
                 <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={maintain.src}></img>
                 <div className='text-[#071952] z-[1] rounded-[10px] md:text-[#F1F0E8] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] md:bg-[#061d3a] w-[100%] h-[fit-content]'>
@@ -170,7 +170,7 @@ export default function Home() {
       </div>
       <div id="portfolio" className='bg-[#DAFFFB] py-[60px]'>
         <div className='text-center container'>
-            <h2 className='font-[Amita-Regular] text-[40px] text-[#071952]'>Porfolio</h2>
+            <h2 className='font-[Amita-Regular] text-[25px] md:text-[40px] text-[#071952]'>Porfolio</h2>
             <a href="mailto:seanrosario119@gmail.com?subject='Hello from Abstract!'&body='Just popped in to say hello'">Click to Send an Email</a>
           <form method="post" action="">
             asdfasdf
