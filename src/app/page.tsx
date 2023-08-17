@@ -33,16 +33,11 @@ export default function Home() {
   // console.log(introduction_video)
   return (
     <main className="relative">
-      <div ref={myVideo} className='fixed flex items-center justify-center left-0 top-0 bottom-0 right-0'>
-      <React.StrictMode>
-        <div>
-          <video autoPlay muted loop controls width="300" height="300">
-            <source type="video/mp4" src="../../public/Videos/introduction_video.mp4" />
-          </video>
-        </div>
-      </React.StrictMode>
-        
-      </div>
+      {/* <div ref={myVideo} className='fixed flex items-center justify-center left-0 top-0 bottom-0 right-0'>
+        <video autoPlay muted loop controls width="300" height="300">
+          <source type="video/mp4" src="../../public/Videos/introduction_video.mp4" />
+        </video>
+      </div> */}
       <div className="flex sticky top-[0] z-[100] bg-[#0C356A] px-[20px] md:px-[40px]">
         <div className="font-[Amita-Regular] text-[50px] text-[#A1C2F1]">
           <a href="#">Sean</a>
