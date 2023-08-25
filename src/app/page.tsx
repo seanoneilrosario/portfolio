@@ -121,11 +121,11 @@ export default function Home(this: any) {
           <div className='md:flex items-center md:pt-[60px] pt-[30px]'>
             <div className='md:mx-[20px] md:w-[50%] h-[100%] w-[100%] relative video_present'>
               <img className='h-[100%] max-h-[600px] w-[100%] object-cover profile_image' src={profile.src}></img>
-              <div className='absolute left-[0] right-[0] bottom-[0] top-[0] w-full h-full flex justify-center items-center play_btn bg-[#061d3ac2]'>
+              {/* <div className='absolute left-[0] right-[0] bottom-[0] top-[0] w-full h-full flex justify-center items-center play_btn bg-[#061d3ac2]'>
                 <span onClick={openVideo} className='rounded-[100px] bg-[#F1F0E8] pt-[13px] pr-[10px] pb-[13px] pl-[15px] cursor-pointer'>
                   <img width={play.width} height={play.height} src={play.src} alt="" />
                 </span>
-              </div>
+              </div> */}
             </div>
             <div className='px-[20px] pt-[30px] md:pt-[0] md:w-[50%] h-[100%] w-[100%] flex flex-col justify-center'>
               <p className='text-[#071952] text-left pb-[20px]'>
@@ -148,39 +148,39 @@ export default function Home(this: any) {
           <div className='pt-[20px] flex flex-wrap justify-center items-start'>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={html5.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>HTML5</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>HTML5</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={css3.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>CSS3</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>CSS3</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={javascript.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>Javascript</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Javascript</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={jqueryImg.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>Jquery</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Jquery</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={github.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>GitHub</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>GitHub</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={tailwind.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>Tailwind</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Tailwind</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={react.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>React</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>React</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={shopify.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>Shopify</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Shopify</span>
             </div>
             <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
               <img className='h-[200px] mx-[auto] object-contain w-[auto]' src={wordpress.src} />
-              <span className='text-[16px] md:text-[20px] mt-[20px] block'>WordPress</span>
+              <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>WordPress</span>
             </div>
           </div>
         </div>
@@ -259,15 +259,15 @@ export default function Home(this: any) {
             <div className='pt-[20px] flex flex-wrap justify-start items-start'>
               <a target='_blank' href="https://i-care-site.myshopify.com/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={icare.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block'>ICare</span>
+                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>ICare</span>
               </a>
               <a target='_blank' href="https://mani-life.com/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={manilife.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block'>Mani Life</span>
+                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Mani Life</span>
               </a>
               <a target='_blank' href="https://onyxlondon.com/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={onyx.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block'>Onyx London</span>
+                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Onyx London</span>
               </a>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function Home(this: any) {
             <div className='pt-[20px] flex flex-wrap justify-start items-start'>
               <a target='_blank' href="https://megaphone.com.au/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={megaphone.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block'>Megaphone</span>
+                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Megaphone</span>
               </a>
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function Home(this: any) {
             <div className='pt-[20px] flex flex-wrap justify-start items-start'>
               <a target='_blank' href="https://profin.vercel.app/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={profin.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block'>Profin</span>
+                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Profin</span>
               </a>
             </div>
           </div>
