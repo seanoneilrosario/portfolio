@@ -18,17 +18,20 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
+  transition: 0.3s;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-    font-family: 'Nunito-VariableFont_wght';
+  font-family: 'Nunito-VariableFont_wght';
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -45,6 +48,16 @@ body {
   font-family: 'Nunito-VariableFont_wght';
   src: url(../../public/fonts//Nunito-VariableFont_wght.ttf) format('truetype');
 }
+
+
+/* Layout */
+.layout.dark body {
+  background: #222 !important;
+  color: #fff;
+}
+
+
+
 
 .container {
   padding: 0 20px;
@@ -96,8 +109,8 @@ body {
 .menu_toggle {
   position: fixed;
   z-index: 10000;
-  right: 20px;
-  top: 22px;
+  left: 20px;
+  top: 20px;
 }
 
 .menu_hamberg {
@@ -107,13 +120,24 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .menu_hamberg span {
   width: 38px;
   height: 4px;
-  background-color: #F1F0E8;
+  background-color: #222;
   display: block;
   transition: 0.3s ease-out;
+}
+
+.dark .menu_hamberg span {
+  background-color: #F1F0E8;
+}
+
+.menu_toggle.active .menu_hamberg span {
+  background-color: #F1F0E8;
+}
+
+.dark .menu_toggle.active .menu_hamberg span {
+  background-color: #222;
 }
 
 .menu_toggle.active .menu_hamberg span:nth-child(2) {
@@ -193,6 +217,10 @@ body {
   align-items: center;
 }
 
+.dark .checkbox-label {
+  background-color: #888;
+}
+
 .checkbox-label .ball {
   background-color: #fff;
   width: 18px;
@@ -202,4 +230,137 @@ body {
   top: 4px;
   border-radius: 50%;
   transition: transform 0.2s linear;
+}
+
+.dark .checkbox-label .ball {
+  background-color: #333;
+}
+
+
+@media(min-width: 2100px) {
+  .checkbox-label {
+    width: 90px;
+    height: 46px;
+  }
+  
+  .checkbox-label .ball {
+    width: 40px;
+    height: 40px;
+    left: 22px;
+    top: 3px;
+  }
+
+  .checkbox-label .ball.light {
+    transform: translateX(-17px) !important;
+  }
+
+  .checkbox-label svg {
+    width: 25px;
+  }
+}
+
+
+/* header */
+.linked_items svg {
+  transition: 0.3s;
+}
+
+.linked_items a:hover svg {
+  fill: #02026d;
+}
+
+.dark .linked_items svg {
+  fill: #fff;
+}
+
+.dark .linked_items a:hover svg {
+  fill: #6ec0ff;
+}
+
+/* intro */
+.first_text {
+ color: #999;
+ transition: 0.3s;
+}
+
+.dark .first_text {
+  color: #555;
+}
+
+.homepage_stagin .bio_link {
+  display: block;
+}
+
+.bio_link {
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .bio_link {
+    display: block;
+  }
+}
+
+@media(min-height: 600px) and (min-width: 768px) {
+  .homepage_stagin {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  .intro {
+    margin-top: -150px;
+  }
+}
+
+/* Menus */
+.menu_items a {
+  color: #fff;
+}
+
+.dark .menu_items a {
+  color: #222;
+}
+
+.menu_items {
+  background-color: #222;
+  padding-top: 50px;
+  transition: 0.3s;
+}
+
+.dark  .menu_items {
+  background-color: #fff;
+}
+
+.menu_items.active {
+  transform: translateX(0) !important;
+}
+
+@media(min-width: 768px) {
+  .menu_items {
+    background-color: transparent !important;
+    padding-top: 0;
+  }
+
+  .menu_items a {
+    background-color: #222;
+  }
+  
+  .dark .menu_items a {
+    background-color: #fff;
+  }
+}
+
+
+/* Image text on hover */
+
+@media(min-width: 768px) {
+  .text-hover {
+    background: #061d3a;
+    color: #fff;
+  }
+
+  .dark .text-hover {
+    background: #ebebeb;
+    color: #061d3a;
+  }
 }

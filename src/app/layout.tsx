@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import grid_bg from "../../public/images/grid_bg.png";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='layout'>
+      <img className='fixed left-0 top-0 w-full h-full z-[-1]' src={grid_bg.src} />
       <body className={inter.className}>{children}</body>
     </html>
   )
