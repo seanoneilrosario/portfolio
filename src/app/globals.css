@@ -179,3 +179,27 @@ body {
 .profile_image {
   object-position: 0 -85px;
 }
+
+.checkbox-label {
+  background-color: #333;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
