@@ -257,10 +257,6 @@ export default function Home(this: any) {
           <div className='text-left mt-[20px] md:mt-[40px]'>
             <h3 className='text-[18px] md:text-[23px]'>Shopify</h3>
             <div className='pt-[20px] flex flex-wrap justify-start items-start'>
-              <a target='_blank' href="https://i-care-site.myshopify.com/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
-                <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={icare.src} />
-                <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>ICare</span>
-              </a>
               <a target='_blank' href="https://mani-life.com/" className='w-[calc(100%-30px)] md:w-[calc(100%/2-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/3-40px)]'>
                 <img className='ml-[0] h-[200px] mx-[auto] object-contain w-[auto]' src={manilife.src} />
                 <span className='text-[16px] md:text-[20px] mt-[20px] block text-[#000]'>Mani Life</span>
