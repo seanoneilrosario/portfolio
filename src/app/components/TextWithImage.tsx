@@ -1,14 +1,11 @@
 'use client'
 import profile from "../../../public/images/profile.jpg";
 
-const TextWithImage = ({title}: any) => {
+const TextWithImage = () => {
   return (
     <div className="relative">
       <div className="min:h-[100vh] w-full my-[auto]">
-        <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px] intro">
-          <span className="block font-[800] text-[18vw] md:text-[10vw] leading-[1] translate-y-[-9vw] mt-[50px] md:mt-[120px] capitalize">
-            {title}
-          </span>
+        <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px]">
           <div className="md:max-w-[80vw] px-[1.5vw] mx-[auto] w-[100%] md:flex">
             <div className="md:w-[50%] md:mr-[35px] mb-[30px] md:mb-[0]">
                 <p className="leading-[1.8] text-[2.8vw] md:text-[1vw] whitespace-pre-wrap">

@@ -5,14 +5,11 @@ import design from "../../../public/images/design.png";
 import testing from "../../../public/images/testing.png";
 import maintain from "../../../public/images/maintain.png";
 
-const ImageTextOnHover = ({title}:any) => {
+const ImageTextOnHover = () => {
   return (
     <div className="relative">
         <div className="min:h-[100vh] w-full my-[auto]">
-            <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px] intro">
-                <span className="block font-[800] text-[18vw] md:text-[10vw] leading-[1] translate-y-[-9vw] mt-[50px] md:mt-[120px] capitalize">
-                    {title}
-                </span>
+            <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px]">
                 <div className='pt-[20px] flex flex-wrap justify-center items-start'>
                     <div className='w-[100%] md:w-[33.33%] p-[20px]'>
                         <h3 className='text-[3.5vw] md:text-[1.6vw] pb-[20px]'>1. Web Development</h3>
@@ -20,10 +17,10 @@ const ImageTextOnHover = ({title}:any) => {
                             <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={webdev.src}></img>
                             <div className='text-hover text-[3vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] p-[20px] w-[100%] h-[fit-content]'>
                             <p className='pb-[20px]'>
-                                • Front-end Development: Creating user interfaces using HTML, CSS, and JavaScript frameworks like React, Angular, or Vue.
+                                • Front-end Development: Creating user interfaces using HTML, CSS, and JavaScript frameworks like React.
                             </p>
                             <p>
-                                • Back-end Development: Building server-side logic, databases, and APIs using technologies like Node.js, Python (Django, Flask), Ruby on Rails, etc.
+                                • Back-end Development: Building server-side logic, databases, and APIs using technologies like Node.js.
                             </p>
                             </div>
                         </div>

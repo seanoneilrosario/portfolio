@@ -9,56 +9,72 @@ import react from "../../../public/images/react.png";
 import shopify from "../../../public/images/shopify.png";
 import wordpress from "../../../public/images/wordpress.png";
 
-const IconsWithTitles = ({title}: any) => {
-  return (
-    <div className="relative">
-        <div className="min:h-[100vh] w-full my-[auto]">
-            <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px] intro">
-                <span className="block font-[800] text-[18vw] md:text-[10vw] leading-[1] translate-y-[-9vw] mt-[50px] md:mt-[120px] capitalize">
-                    {title}
-                </span>
-                <div className='pt-[20px] flex flex-wrap justify-center items-start'>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={html5.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>HTML5</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={css3.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>CSS3</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={javascript.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Javascript</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={jqueryImg.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Jquery</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={github.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>GitHub</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={tailwind.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Tailwind</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={react.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>React</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={shopify.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Shopify</span>
-                    </div>
-                    <div className='w-[calc(100%-30px)] md:w-[calc(100%/3-40px)] m-[15px] md:m-[20px] lg:w-[calc(100%/5-40px)]'>
-                        <img className='h-[200px] mx-[auto] object-contain w-[auto] icon_image' src={wordpress.src} />
-                        <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>WordPress</span>
-                    </div>
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Autoplay, Mousewheel } from 'swiper/modules';
+import grid_bg from "../../../public/images/grid_bg.png";
+
+const IconsWithTitles = () => {
+
+    return (
+        <div className="relative">
+            <div className="min:h-[100vh] w-full icon_slider relative">
+                <img className="bg_grid absolute" src={grid_bg.src} />
+                <div className="w-full h-full flex items-center justify-center flex-col px-[20px] md:max-w-[80vw] mx-[auto]">
+                    <Swiper
+                        slidesPerView={4}
+                        spaceBetween={30}
+                        mousewheel={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Mousewheel, Autoplay]}
+                        className='pt-[20px] flex flex-wrap justify-center items-start w-full'
+                    >
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={html5.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>HTML5</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={css3.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>CSS3</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={javascript.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Javascript</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={jqueryImg.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Jquery</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={github.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>GitHub</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={tailwind.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Tailwind</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={react.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>React</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={shopify.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Shopify</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='contrast-[0] h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={wordpress.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>WordPress</span>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default IconsWithTitles;

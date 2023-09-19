@@ -1,3 +1,4 @@
+import FeaturedPorfolios from "../components/FeaturedPorfolios";
 import Header from "../components/Header";
 import IconsWithTitles from "../components/IconsWithTitles";
 import ImageTextOnHover from "../components/ImageTextOnHover";
@@ -12,13 +13,16 @@ const page = async ({ params }: { params: { slug: string } }) => {
         <LightDarkToggle /> 
         <Header />
         {slug == 'about-me' && (
-          <TextWithImage title={title} />
+          <>
+            <TextWithImage />
+            <IconsWithTitles />
+            <ImageTextOnHover />
+          </>
         )}
-        {slug == 'skills' && (
-          <IconsWithTitles title={title} />
-        )}
-        {slug == 'services' && (
-          <ImageTextOnHover title={title} />
+        {slug == 'portfolio' && (
+          <>
+            <FeaturedPorfolios />
+          </>
         )}
     </div>
   )
