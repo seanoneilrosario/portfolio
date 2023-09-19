@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import grid_bg from "../../public/images/grid_bg.png";
 import sean_logo from '../../public/images/sean_logo.png';
-import seans from '../../public/images/seans.png';
+import seans from '../../public/images/cover_img.png';
 
 const inter = Inter({ subsets: ['latin'] })
 

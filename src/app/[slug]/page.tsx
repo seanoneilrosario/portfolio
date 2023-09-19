@@ -5,6 +5,7 @@ import IconsWithTitles from "../components/IconsWithTitles";
 import ImageTextOnHover from "../components/ImageTextOnHover";
 import LightDarkToggle from "../components/LightDarkToggle";
 import TextWithImage from "../components/TextWithImage";
+import seans from '../../../public/images/cover_img.png';
 
 type Props = {
   params: { slug: string }
@@ -18,6 +19,10 @@ export async function generateMetadata(
   const titleCapitalize = title.charAt(0).toUpperCase() + title.slice(1)
   return {
     title: `Sean | ${titleCapitalize}`,
+    openGraph: {
+      description: 'Web Developer',
+      images: seans.src
+    }
   }
 }
 
