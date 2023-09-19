@@ -35,14 +35,7 @@ const Header = () => {
                 </span>
             </motion.div>
             <div className="px-[20px] pt-[20px] flex justify-end md:justify-between items-center md:items-start">
-                <motion.div 
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 }}
-                    viewport={{ once: true }}
-                    exit={{ opacity:0, x: 20 }}
-                    className="menu_items pointer-events-auto h-[100%] z-[1000] fixed md:static left-[0] top-[0] w-[80vw] md:w-[initial] translate-x-[-80vw] md:translate-x-[0]"
-                >
+                <div className="menu_items pointer-events-auto h-[100%] z-[1000] fixed md:static left-[0] top-[0] w-[80vw] md:w-[initial] translate-x-[-80vw] md:translate-x-[0]">
                     <a className="block md:hidden md:text-center px-[20px] md:px-[50px] py-[8px] text-[3vw] md:text-[1.1vw] font-[600] mb-[10px]" href="/">
                         Home
                     </a>
@@ -52,7 +45,7 @@ const Header = () => {
                     <a className="block md:text-center px-[20px] md:px-[50px] py-[8px] text-[3vw] md:text-[1.1vw] font-[600] mb-[10px]" href="/portfolio">
                         Portfolio
                     </a>
-                </motion.div>
+                </div>
                 <motion.div 
                     initial={{ opacity: 0, y: -20 }}
                     whileInView={{ opacity: 1, y: 0 }}
