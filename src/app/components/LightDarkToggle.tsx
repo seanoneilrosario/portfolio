@@ -8,7 +8,11 @@ const LightDarkToggle = () => {
       setTheme(themeSetter);
    };
 
-   const themeColor = localStorage.getItem('themeProvides');
+   let themeColor:any;
+   if (typeof window !== 'undefined') {
+      // Perform localStorage action
+      themeColor = localStorage.getItem('themeProvides');
+    }
    const [theme, setTheme] = useState(themeColor)
 
    useEffect(() => {
