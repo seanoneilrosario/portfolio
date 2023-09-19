@@ -17,7 +17,7 @@ export async function generateMetadata(
   const title = slug.replace("-", " ");
   const titleCapitalize = title.charAt(0).toUpperCase() + title.slice(1)
   return {
-    title: titleCapitalize,
+    title: `Sean | ${titleCapitalize}`,
   }
 }
 

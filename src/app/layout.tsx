@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   title: 'Sean Oneil Rosario',
   description: 'Web Developer',
   icons: sean_logo.src,
-  assets: seans.src
+  openGraph: {
+    description: 'Web Developer',
+    images: seans.src
+  }
 }
 
 export default function RootLayout({
