@@ -2,15 +2,14 @@
 import { useEffect, useState } from "react";
 
 const LightDarkToggle = () => {
-   const themeColor = localStorage.getItem('themeProvides');
-   const [theme, setTheme] = useState(themeColor)
-   
-
    const btn_toggle = (e:any) => {
       const themeSetter = e.target.checked == true ? 'dark' : 'light';
       localStorage.setItem('themeProvides', themeSetter)
       setTheme(themeSetter);
    };
+
+   const themeColor = localStorage.getItem('themeProvides');
+   const [theme, setTheme] = useState(themeColor)
 
    useEffect(() => {
       const layout = document.querySelector('.layout')
