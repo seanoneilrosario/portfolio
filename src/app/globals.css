@@ -772,7 +772,7 @@ main {
   right: 0;
   height: 5px;
   background: #333;
-  top: 20px;
+  bottom: 8px;
 }
 
 .dark .progress {
