@@ -356,12 +356,18 @@ main {
 @media(min-width: 768px) {
   .text-hover {
     background: #061d3a;
-    color: #fff;
+  }
+
+  .text-hover p {
+    color: #fff !important;
   }
 
   .dark .text-hover {
     background: #ebebeb;
-    color: #061d3a;
+  }
+
+  .dark .text-hover p {
+    color: #061d3a !important;
   }
 }
 
@@ -638,6 +644,14 @@ main {
 
 
 
+* {
+  color: #333;
+}
+
+.dark * {
+  color: #fff;
+}
+
 
 
 
@@ -715,10 +729,12 @@ main {
   font-weight: 600;
   text-shadow: 1px 1px 4px rgba(232, 232, 232, 1);
   max-width: fit-content;
+  color: #333;
 }
 
 .dark .parallax_img_wrap h2 {
   text-shadow: 1px 1px 4px rgba(51, 51, 51, 1);
+  color: #fff;
 }
 
 .parallax_img_wrap img {
