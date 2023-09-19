@@ -1,73 +1,16 @@
-'use client'
-import programming from '../../public/images/programming.jpg'
-import profile from '../../public/images/profile.jpg'
-import design from '../../public/images/design.png'
-import ecom from '../../public/images/ecom.png'
-import maintain from '../../public/images/maintain.png'
-import testing from '../../public/images/testing.png'
-import webdev from '../../public/images/web-dev.jpg'
-import play from '../../public/svg/play.svg'
-import jqueryImg from '../../public/images/jquery.png'
-import html5 from '../../public/images/html5.png'
-import css3 from '../../public/images/css3.png'
-import github from '../../public/images/github.png'
-import javascript from '../../public/images/javascript.png'
-import react from '../../public/images/react.png'
-import tailwind from '../../public/images/tailwind.png'
-import wordpress from '../../public/images/wordpress.png'
-import shopify from '../../public/images/shopify.png'
-import icare from '../../public/images/icare.png'
-import manilife from '../../public/images/manilife.png'
-import onyx from '../../public/images/onyx.png'
-import profin from '../../public/images/profin.png'
-import megaphone from '../../public/images/megaphone.png'
-
-// import introduction_video from '../../public/Videos/introduction_video.mp4'
-import { useEffect, useRef, useState, } from 'react'
-import React from 'react';
-import { DataBase } from "../config/firebase";
-import { getDocs, collection } from "firebase/firestore";
-import SpreadComponents from './components/SpreadComponents'
-
-
+import Link from "next/link";
+import LightDarkToggle from "./components/LightDarkToggle";
+import linkedin from "../../public/images/linkedin.png";
+import github from "../../public/images/github.png";
+import Header from "./components/Header";
+import HomePageTextIntro from "./components/HomePageTextIntro";
 export default function Home(this: any) {
 
-  const listOfComponents = ['parallax_with_text',  'text_with_video']
-  let pageComponentsData:any = [];
-
-  listOfComponents.map((name:string) => {
-    const componentRef = collection(DataBase, name);
-
-    const getComponentsList = async () => {
-      const data = await getDocs(componentRef);
-      const filteredData = data.docs.map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-        collection: name,
-      }))
-      pageComponentsData.push(filteredData)
-    }
-    getComponentsList()
-  })
-
-  const menu_toggle = (e:any) => {
-    if(!e.target.parentElement.parentElement?.classList.contains('active')) {
-      e.target.parentElement.parentElement?.classList.add('active')
-    } else {
-      e.target.parentElement.parentElement?.classList.remove('active')
-    }
-    if(!e.target.parentElement.parentElement.nextSibling?.classList.contains('active')) {
-      e.target.parentElement.parentElement.nextSibling?.classList.add('active')
-    } else {
-      e.target.parentElement.parentElement.nextSibling?.classList.remove('active')
-    }
-  }
-  const myVideo:any = useRef(null)
-  const openVideo = (e:any) => {
-    // console.log(myVideo.current)
-  }
-
   return (
+    <main className="relative homepage_stagin">
+      <LightDarkToggle /> 
+      <Header />
+      <HomePageTextIntro />
     <main className="relative">
       {/* <div ref={myVideo} className='fixed flex items-center justify-center left-0 top-0 bottom-0 right-0'>
         <video autoPlay muted loop controls width="300" height="300">
