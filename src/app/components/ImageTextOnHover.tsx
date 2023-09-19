@@ -9,7 +9,7 @@ const ImageTextOnHover = () => {
   return (
     <div className="relative">
         <div className="min:h-[100vh] w-full my-[auto]">
-            <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px]">
+            <div className="w-full h-[fit-content] flex items-center justify-center flex-col px-[20px]">
                 <div className='pt-[20px] flex flex-wrap justify-center items-start'>
                     <div className='w-[100%] md:w-[33.33%] p-[20px]'>
                         <h3 className='text-[3.5vw] md:text-[1.6vw] pb-[20px]'>1. Web Development</h3>

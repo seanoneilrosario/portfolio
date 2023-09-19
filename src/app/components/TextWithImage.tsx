@@ -4,7 +4,7 @@ import profile from "../../../public/images/profile.jpg";
 const TextWithImage = () => {
   return (
     <div className="relative">
-      <div className="min:h-[100vh] w-full my-[auto]">
+      <div className="min:h-[100vh] w-full my-[auto] mt-[40px]">
         <div className="w-full h-[fit-content] pt-[10vw] md:pt-[5vw] flex items-center justify-center flex-col px-[20px]">
           <div className="md:max-w-[80vw] px-[1.5vw] mx-[auto] w-[100%] md:flex">
             <div className="md:w-[50%] md:mr-[35px] mb-[30px] md:mb-[0]">
