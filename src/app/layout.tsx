@@ -22,8 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='layout'>
-      <img className='fixed left-0 top-0 w-full h-full z-[-1]' src={grid_bg.src} />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <img className='fixed left-0 top-0 w-full h-full z-[-1]' src={grid_bg.src} />
+        {children}
+      </body>
     </html>
   )
 }

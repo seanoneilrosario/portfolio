@@ -2,26 +2,32 @@
 import { useEffect, useState } from "react";
 
 const LightDarkToggle = () => {
+   let color:any;
+   const [theme, setTheme] = useState('')
+
+   useEffect(() => {
+      color = localStorage.getItem('themeProvides');
+      setTheme(color)
+      console.log(color)
+    }, [theme]);
+
    const btn_toggle = (e:any) => {
       const themeSetter = e.target.checked == true ? 'dark' : 'light';
-      localStorage.setItem('themeProvides', themeSetter)
+      window.localStorage.setItem('themeProvides', themeSetter)
       setTheme(themeSetter);
    };
-
-   const themeColor = localStorage.getItem('themeProvides');
-   const [theme, setTheme] = useState(themeColor)
 
    useEffect(() => {
       const layout = document.querySelector('.layout')
       if (layout?.classList.contains('dark')) {
          layout?.classList.remove('dark')
-         layout?.classList.add(`${themeColor}`)
+         layout?.classList.add(`${color}`)
       } else {
          layout?.classList.remove('light')
-         layout?.classList.add(`${themeColor}`)
+         layout?.classList.add(`${color}`)
       }
    })
-
+   
    const transform = theme == 'dark' ? '24px' : '0';
    const inputState = theme == 'dark' ? true : false;
 
@@ -37,7 +43,7 @@ const LightDarkToggle = () => {
                      <svg width="13" className="dark fill-[#fff]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                         <path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
                      </svg>
-                     <span style={{transform: `translateX(${transform})`}} className={`ball ${theme}`}></span>
+                     <span style={{transform: `translateX(${transform})`}} className={`ball ${color}`}></span>
                   </label>
                </div>
          </div>

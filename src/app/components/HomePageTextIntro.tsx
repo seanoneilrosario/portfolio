@@ -15,7 +15,7 @@ const HomePageTextIntro = () => {
             <span className="block font-[800] text-[20vw] md:text-[12vw] leading-[1] translate-y-[-9vw]">
                 Sean
             </span>
-            <p className="mx-[auto] md:w-[30vw] text-center leading-[2] text-[3vw] md:text-[1.1vw] translate-y-[-8vw]">
+            <div className="mx-[auto] md:w-[30vw] text-center leading-[2] text-[3vw] md:text-[1.1vw] translate-y-[-8vw]">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
@@ -38,7 +38,7 @@ const HomePageTextIntro = () => {
                         .start();
                     }}
                 />
-            </p>
+            </div>
         </div>
     </div>
   )

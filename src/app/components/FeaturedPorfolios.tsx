@@ -87,7 +87,7 @@ export default function FeaturedPorfolios() {
     return (
         <div className="mt-[100px] md:mt-[150px]">
             {image_with_links.map((image, index) => (
-                <Image id={image.image} index={index} link={image.link} />
+                <Image key={index} id={image.image} index={index} link={image.link} />
             ))}
             <motion.div className="progress" style={{ scaleX }} />
         </div>
