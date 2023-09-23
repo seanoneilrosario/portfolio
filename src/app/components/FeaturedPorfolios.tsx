@@ -72,7 +72,7 @@ export default function FeaturedPorfolios() {
         },
         {
             'image': lehlo,
-            'link': 'https://lehlo-nicolaslavrov-nicolas-lavrov-studio.vercel.app/'
+            'link': 'https://lehlointeriors.com/'
         },
         {
             'image': bedtime_beauty,
