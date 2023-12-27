@@ -8,6 +8,7 @@ import branco from "../../../public/images/branco.png";
 import lehlo from "../../../public/images/lehlo.png";
 import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
 import rawbuzz from "../../../public/images/rawbuzz.png";
+import vapelabs from "../../../public/images/vapelabs.png";
 
 import { useRef } from "react";
 import {
