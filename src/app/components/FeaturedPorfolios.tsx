@@ -81,6 +81,10 @@ export default function FeaturedPorfolios() {
         {
             'image': rawbuzz,
             'link': 'https://eatrawbuzz.com/'
+        },
+        {
+            'image': vapelabs,
+            'link': 'https://vapelabs.com.au/'
         }
     ];
 
