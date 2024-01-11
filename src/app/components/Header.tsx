@@ -64,8 +64,8 @@ const Header = () => {
                     exit={{ opacity:0, x: -20 }}
                     className="pointer-events-auto bio_link"
                 >
-                    <p className="text-[3vw] md:text-[1.1vw]">Email: <a href="mailto:seanrosario119@gmail.com" className="italic underline">seanrosario119@gmail.com</a></p>
-                    <p className="text-[3vw] md:text-[1.1vw]">Phone: <a href="tel:+639918448992" className="italic underline">+63 991 844 8992</a></p>
+                    <p className="text-[4vw] md:text-[1.1vw]">Email: <a href="mailto:seanrosario119@gmail.com" className="italic underline">seanrosario119@gmail.com</a></p>
+                    <p className="text-[4vw] md:text-[1.1vw]">Phone: <a href="tel:+639918448992" className="italic underline">+63 991 844 8992</a></p>
                     <div className="flex mt-[5px] linked_items pointer-events-auto">
                         <a target="_blank" href="https://github.com/seanoneilrosario" className="mr-[8px]">
                         <svg className="w-[6vw] md:w-[2vw] h-[6vw] md:h-[2vw]" version="1.1" width="25" height="25" viewBox="0 0 512 512">

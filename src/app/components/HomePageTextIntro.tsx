@@ -35,7 +35,7 @@ const HomePageTextIntro = () => {
                 >
                     Sean
                 </motion.span>
-                <div className="mx-[auto] md:w-[30vw] text-center leading-[2] text-[3vw] md:text-[1.1vw] translate-y-[-8vw]">
+                <div className="mx-[auto] md:w-[30vw] text-center leading-[2] text-[4vw] md:text-[1.1vw] translate-y-[-8vw]">
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter

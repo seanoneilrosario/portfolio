@@ -16,8 +16,8 @@ const TextWithImage = () => {
                   exit={{ opacity:0, x: 20 }}
                   className="md:w-[50%] md:mr-[35px] mb-[30px] md:mb-[0]"
                 >
-                  <p className="leading-[1.8] text-[2.8vw] md:text-[1vw] whitespace-pre-wrap">
-                      <span className="leading-[1.2] block text-[4.5vw] md:text-[2.5vw] mb-[15px]"><b>Sean Oneil</b> is a talented and dedicated web developer</span>with 5 years of professional experience. Specialized in Shopify and React, with expertise in WordPress and headless CMS. Skilled in creating dynamic and user-friendly websites that meet client requirements. Committed to delivering high-quality solutions within given timeframes.
+                  <p className="leading-[1.8] text-[4vw] md:text-[1vw] whitespace-pre-wrap">
+                      <span className="leading-[1.2] block text-[6vw] md:text-[2.5vw] mb-[15px]"><b>Sean Oneil</b> is a talented and dedicated web developer</span>with 5 years of professional experience. Specialized in Shopify and React, with expertise in WordPress and headless CMS. Skilled in creating dynamic and user-friendly websites that meet client requirements. Committed to delivering high-quality solutions within given timeframes.
                       Throughout my journey with Shopify, I have gained comprehensive proficiency in its features, functionalities, and best practices. I am well-versed in customizing themes, developing responsive and user-friendly designs, and implementing robust e-commerce solutions. Whether it's setting up product catalogs, configuring payment gateways, or optimizing the checkout process, I possess the skills necessary to create seamless and successful online stores.
                       And as a skilled web developer, I have accumulated more than 2 years of hands-on experience working with React, a powerful JavaScript library for building user interfaces. However, my true specialization lies in the realm of headless CMS integration, where I excel in utilizing tools like Hydrogen, WordPress, and Sanity.
                   </p>
