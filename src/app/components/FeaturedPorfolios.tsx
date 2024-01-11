@@ -9,6 +9,7 @@ import lehlo from "../../../public/images/lehlo.png";
 import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
 import rawbuzz from "../../../public/images/rawbuzz.png";
 import vapelabs from "../../../public/images/vapelabs.png";
+import quick_rx from "../../../public/images/quick_rx.png";
 
 import { useRef } from "react";
 import {
@@ -86,6 +87,10 @@ export default function FeaturedPorfolios() {
         {
             'image': vapelabs,
             'link': 'https://vapelabs.com.au/'
+        },
+        {
+            'image': quick_rx,
+            'link': 'https://quick_rx.com.au/'
         }
     ];
 
