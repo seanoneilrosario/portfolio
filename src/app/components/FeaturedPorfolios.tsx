@@ -90,7 +90,7 @@ export default function FeaturedPorfolios() {
         },
         {
             'image': quick_rx,
-            'link': 'https://quick_rx.com.au/'
+            'link': 'https://quickrx.com.au/'
         }
     ];
 
