@@ -751,7 +751,7 @@ main {
   transition: 2s;
 }
 .parallax_img_wrap > a img {
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
 @media(min-width: 768px) {
@@ -768,7 +768,7 @@ main {
   }
 
   .parallax_img_wrap > a img {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
 
   .parallax_img_wrap > a:hover img {
