@@ -82,11 +82,11 @@ const IconsWithTitles = () => {
                             <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>WordPress</span>
                         </SwiperSlide>
                         <SwiperSlide className=''>
-                            <img className='contrast-[0] h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zoho.src} />
+                            <img className='h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zoho.src} />
                             <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Zoho</span>
                         </SwiperSlide>
                         <SwiperSlide className=''>
-                            <img className='contrast-[0] h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zapier.src} />
+                            <img className='h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zapier.src} />
                             <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Zapier</span>
                         </SwiperSlide>
                     </Swiper>
