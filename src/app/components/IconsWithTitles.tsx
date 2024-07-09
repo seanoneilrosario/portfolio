@@ -8,6 +8,8 @@ import tailwind from "../../../public/images/tailwind.png";
 import react from "../../../public/images/react.png";
 import shopify from "../../../public/images/shopify.png";
 import wordpress from "../../../public/images/wordpress.png";
+import zoho from "../../../public/images/zoho.png";
+import zapier from "../../../public/images/zapier.png";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -78,6 +80,14 @@ const IconsWithTitles = () => {
                         <SwiperSlide className=''>
                             <img className='contrast-[0] h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={wordpress.src} />
                             <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>WordPress</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='contrast-[0] h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zoho.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Zoho</span>
+                        </SwiperSlide>
+                        <SwiperSlide className=''>
+                            <img className='contrast-[0] h-[70px] md:h-[120px] mx-[auto] object-contain w-[auto] icon_image' src={zapier.src} />
+                            <span className='text-[3vw] md:text-[1.1vw] mt-[20px] block text-center'>Zapier</span>
                         </SwiperSlide>
                     </Swiper>
                 </div>

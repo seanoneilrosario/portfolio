@@ -28,7 +28,7 @@ const TextWithImage = () => {
                   exit={{ opacity:0, x: -20 }}
                   className="md:w-[50%] md:ml-[35px]"
                 >
-                  <img className="object-cover object-top w-[100%] h-[100%] max-h-[500px] md:max-h-[32vw]" src={profile.src} />
+                  <img className="object-cover object-top w-[100%] h-[100%] max-h-[500px] md:max-h-[32vw] rounded-2xl" src={profile.src} />
               </motion.div>
             </div>
           </div>
