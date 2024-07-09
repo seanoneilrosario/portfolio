@@ -22,7 +22,7 @@ const ImageTextOnHover = () => {
                         >
                             <h3 className='text-[4.5vw] md:text-[1.6vw] pb-[20px]'>1. Web Development</h3>
                             <div className='group-item text-left relative'>
-                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={webdev.src}></img>
+                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover bg-white' src={webdev.src}></img>
                                 <div className='text-hover text-[4vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] py-[20px] md:p-[20px] w-[100%] h-[fit-content]'>
                                 <p className='pb-[20px] '>
                                     • Front-end Development: Creating user interfaces using HTML, CSS, and JavaScript frameworks like React.
@@ -42,7 +42,7 @@ const ImageTextOnHover = () => {
                         >
                             <h3 className='text-[4.5vw] md:text-[1.6vw] pb-[20px]'>2. E-commerce Development</h3>
                             <div className='group-item text-left relative'>
-                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={ecom.src}></img>
+                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover bg-white' src={ecom.src}></img>
                                 <div className='text-hover text-[4vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] py-[20px] md:p-[20px] w-[100%] h-[fit-content]'>
                                 <p className='pb-[20px] '>
                                     • Creating and customizing e-commerce platforms like Shopify, WooCommerce, etc.
@@ -59,7 +59,7 @@ const ImageTextOnHover = () => {
                         >
                             <h3 className='text-[4.5vw] md:text-[1.6vw] pb-[20px]'>3. UI/UX Design</h3>
                             <div className='group-item text-left relative'>
-                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={design.src}></img>
+                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover bg-white' src={design.src}></img>
                                 <div className='text-hover text-[4vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] py-[20px] md:p-[20px] w-[100%] h-[fit-content]'>
                                 <p className='pb-[20px] '>
                                     • Designing user interfaces and user experiences to ensure intuitive and visually appealing designs.
@@ -76,7 +76,7 @@ const ImageTextOnHover = () => {
                         >
                             <h3 className='text-[4.5vw] md:text-[1.6vw] pb-[20px]'>4. QA and Testing</h3>
                             <div className='group-item text-left relative'>
-                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={testing.src}></img>
+                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover bg-white' src={testing.src}></img>
                                 <div className='text-hover text-[4vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] py-[20px] md:p-[20px] w-[100%] h-[fit-content]'>
                                 <p className='pb-[20px] '>
                                     • Conducting quality assurance testing to ensure software functionality, performance, and reliability.
@@ -93,7 +93,7 @@ const ImageTextOnHover = () => {
                         >
                             <h3 className='text-[4.5vw] md:text-[1.6vw] pb-[20px]'>5. Maintenance and Support</h3>
                             <div className='group-item text-left relative'>
-                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover' src={maintain.src}></img>
+                                <img className='h-[100%] ease-out duration-[0.4s] w-[100%] object-cover bg-white' src={maintain.src}></img>
                                 <div className='text-hover text-[4vw] md:text-[1.1vw] z-[1] rounded-[10px] md:absolute ease-out duration-[0.4s] md:opacity-0 top-[0] left-[0] py-[20px] md:p-[20px] w-[100%] h-[fit-content]'>
                                 <p className='pb-[20px] '>
                                     • Providing ongoing maintenance, updates, and technical support for websites and applications.

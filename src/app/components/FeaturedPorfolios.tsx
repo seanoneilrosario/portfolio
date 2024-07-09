@@ -10,6 +10,10 @@ import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
 import rawbuzz from "../../../public/images/rawbuzz.png";
 import vapelabs from "../../../public/images/vapelabs.png";
 import quick_rx from "../../../public/images/quick_rx.png";
+import tabuu from "../../../public/images/tabuu.png";
+import vscript from "../../../public/images/vscript.png";
+import svs from "../../../public/images/svs.png";
+import quithero from "../../../public/images/quithero.png";
 
 import { useRef } from "react";
 import {
@@ -91,6 +95,22 @@ export default function FeaturedPorfolios() {
         {
             'image': quick_rx,
             'link': 'https://quickrx.com.au/'
+        },
+        {
+            'image': tabuu,
+            'link': 'https://tabuu.com.au/'
+        },
+        {
+            'image': vscript,
+            'link': 'https://www.v-scripts.com.au/'
+        },
+        {
+            'image': svs,
+            'link': 'https://svsmedical.com.au/'
+        },
+        {
+            'image': quithero,
+            'link': 'https://www.quithero.com.au/'
         }
     ];
 
