@@ -1,5 +1,5 @@
 'use client'
-import profile from "../../../public/images/profile.jpg";
+import profile from "../../../public/images/sean.jpg";
 import { AnimatePresence, motion } from "framer-motion"
 
 const TextWithImage = () => {
