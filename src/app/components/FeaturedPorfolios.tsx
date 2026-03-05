@@ -10,7 +10,6 @@ import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
 import rawbuzz from "../../../public/images/rawbuzz.png";
 import vapelabs from "../../../public/images/vapelabs.png";
 import tabuu from "../../../public/images/tabuu.png";
-import svs from "../../../public/images/svs.png";
 import quitrx from "../../../public/images/quitrx.png";
 import quithero from "../../../public/images/quithero.png";
 
@@ -98,10 +97,6 @@ export default function FeaturedPorfolios() {
         {
             'image': quitrx,
             'link': 'https://quitrx.com.au//'
-        },
-        {
-            'image': svs,
-            'link': 'https://svsmedical.com.au/'
         },
         {
             'image': quithero,
