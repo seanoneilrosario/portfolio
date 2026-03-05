@@ -7,7 +7,6 @@ import onyx from "../../../public/images/onyx.png";
 import branco from "../../../public/images/branco.png";
 import lehlo from "../../../public/images/lehlo.png";
 import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
-import rawbuzz from "../../../public/images/rawbuzz.png";
 import vapelabs from "../../../public/images/vapelabs.png";
 import tabuu from "../../../public/images/tabuu.png";
 import quitrx from "../../../public/images/quitrx.png";
@@ -81,10 +80,6 @@ export default function FeaturedPorfolios() {
         {
             'image': bedtime_beauty,
             'link': 'https://bedtime-beauty.com/'
-        },
-        {
-            'image': rawbuzz,
-            'link': 'https://eatrawbuzz.com/'
         },
         {
             'image': vapelabs,
