@@ -9,10 +9,9 @@ import lehlo from "../../../public/images/lehlo.png";
 import bedtime_beauty from "../../../public/images/bedtime_beauty.png";
 import rawbuzz from "../../../public/images/rawbuzz.png";
 import vapelabs from "../../../public/images/vapelabs.png";
-import quick_rx from "../../../public/images/quick_rx.png";
 import tabuu from "../../../public/images/tabuu.png";
-import vscript from "../../../public/images/vscript.png";
 import svs from "../../../public/images/svs.png";
+import quitrx from "../../../public/images/quitrx.png";
 import quithero from "../../../public/images/quithero.png";
 
 import { useRef } from "react";
@@ -93,16 +92,12 @@ export default function FeaturedPorfolios() {
             'link': 'https://vapelabs.com.au/'
         },
         {
-            'image': quick_rx,
-            'link': 'https://quickrx.com.au/'
-        },
-        {
             'image': tabuu,
             'link': 'https://tabuu.com.au/'
         },
         {
-            'image': vscript,
-            'link': 'https://www.v-scripts.com.au/'
+            'image': quitrx,
+            'link': 'https://quitrx.com.au//'
         },
         {
             'image': svs,

@@ -41,7 +41,7 @@ const HomePageTextIntro = () => {
                             typewriter
                             .pauseFor(700)
                             .changeDelay(50)
-                            .typeString('Professional Web Developer: Crafting Digital Excellence for 5 Years!')
+                            .typeString('Professional Web Developer: Crafting Digital Excellence for 7 Years!')
                             .pauseFor(300)
                             .changeDeleteSpeed(10)
                             .deleteChars(68)
